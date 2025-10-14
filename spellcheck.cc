@@ -499,6 +499,7 @@ int main(int argc, char** argv) {
     
     std::ofstream out("results/word_list_misspelled.txt");
     for (Line line : output_lines) {
+		if (line.line == "\n") continue; // dumb bug ig
       out << line.line;
     }
     out.close();

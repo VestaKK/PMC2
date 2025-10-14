@@ -1,0 +1,281 @@
+==========================
+[*] Using provided files: ./files/dict626623.txt ./files/words658976.txt 
+[*] Using provided nodes: 
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 8 secs 906 ms; 8906
+[0] Set Size: 1247914
+[0] Map Size: 12176525
+[0] File Partion Size: 14001270
+[0] Parallel distribution time: 0 mins 0 secs 402 ms; 402
+[0] Gather time: 0 mins 0 secs 12 ms; 12
+[0] Total time: 0 mins 9 secs 322 ms; 9322
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 4 secs 530 ms; 4530
+[0] Set Size: 627081
+[0] Map Size: 6069303
+[0] File Partion Size: 7000630
+[1] Preprocessing time: 0 mins 4 secs 971 ms; 4971
+[1] Set Size: 622150
+[1] Map Size: 6161685
+[1] File Partion Size: 7000640
+[0] Parallel distribution time: 0 mins 1 secs 201 ms; 1201
+[1] Parallel distribution time: 0 mins 0 secs 398 ms; 398
+[1] Gather time: 0 mins 0 secs 1 ms; 1
+[1] Total time: 0 mins 5 secs 371 ms; 5371
+[0] Gather time: 0 mins 0 secs 15 ms; 15
+[0] Total time: 0 mins 5 secs 748 ms; 5748
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 2 secs 655 ms; 2655
+[0] Set Size: 410025
+[0] Map Size: 4064123
+[0] File Partion Size: 4667082
+[2] Preprocessing time: 0 mins 3 secs 112 ms; 3112
+[2] Set Size: 416758
+[2] Map Size: 4101446
+[2] File Partion Size: 4667106
+[1] Preprocessing time: 0 mins 2 secs 983 ms; 2983
+[1] Set Size: 422984
+[1] Map Size: 4092252
+[1] File Partion Size: 4667082
+[0] Parallel distribution time: 0 mins 0 secs 894 ms; 894
+[1] Parallel distribution time: 0 mins 0 secs 392 ms; 392
+[2] Parallel distribution time: 0 mins 0 secs 656 ms; 656
+[1] Gather time: 0 mins 0 secs 4 ms; 4
+[1] Total time: 0 mins 3 secs 380 ms; 3380
+[2] Gather time: 0 mins 0 secs 2 ms; 2
+[2] Total time: 0 mins 3 secs 771 ms; 3771
+[0] Gather time: 0 mins 0 secs 14 ms; 14
+[0] Total time: 0 mins 3 secs 564 ms; 3564
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 2 secs 145 ms; 2145
+[0] Set Size: 308498
+[0] Map Size: 3036699
+[0] File Partion Size: 3500316
+[1] Preprocessing time: 0 mins 2 secs 213 ms; 2213
+[1] Set Size: 319312
+[1] Map Size: 3059119
+[1] File Partion Size: 3500314
+[2] Preprocessing time: 0 mins 2 secs 505 ms; 2505
+[2] Set Size: 300456
+[2] Map Size: 3126768
+[2] File Partion Size: 3500300
+[3] Preprocessing time: 0 mins 2 secs 453 ms; 2453
+[3] Set Size: 321694
+[3] Map Size: 3049189
+[3] File Partion Size: 3500340
+[0] Parallel distribution time: 0 mins 0 secs 853 ms; 853
+[2] Parallel distribution time: 0 mins 0 secs 467 ms; 467
+[1] Parallel distribution time: 0 mins 0 secs 843 ms; 843
+[2] Gather time: 0 mins 0 secs 3 ms; 3
+[3] Parallel distribution time: 0 mins 0 secs 422 ms; 422
+[2] Total time: 0 mins 2 secs 976 ms; 2976
+[1] Gather time: 0 mins 0 secs 3 ms; 3
+[1] Total time: 0 mins 3 secs 61 ms; 3061
+[3] Gather time: 0 mins 0 secs 2 ms; 2
+[3] Total time: 0 mins 2 secs 877 ms; 2877
+[0] Gather time: 0 mins 0 secs 16 ms; 16
+[0] Total time: 0 mins 3 secs 15 ms; 3015
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 1 secs 739 ms; 1739
+[0] Set Size: 251665
+[0] Map Size: 2409914
+[0] File Partion Size: 2800254
+[1] Preprocessing time: 0 mins 1 secs 780 ms; 1780
+[1] Set Size: 246890
+[1] Map Size: 2466951
+[1] File Partion Size: 2800244
+[3] Preprocessing time: 0 mins 1 secs 622 ms; 1622
+[3] Set Size: 239598
+[3] Map Size: 2507082
+[3] File Partion Size: 2800276
+[4] Preprocessing time: 0 mins 1 secs 852 ms; 1852
+[4] Set Size: 258084
+[4] Map Size: 2439050
+[4] File Partion Size: 2800256
+[2] Preprocessing time: 0 mins 1 secs 781 ms; 1781
+[2] Set Size: 253794
+[2] Map Size: 2455633
+[2] File Partion Size: 2800240
+[3] Parallel distribution time: 0 mins 0 secs 719 ms; 719
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 2 secs 342 ms; 2342
+[0] Parallel distribution time: 0 mins 0 secs 766 ms; 766
+[2] Parallel distribution time: 0 mins 0 secs 372 ms; 372
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 2 secs 154 ms; 2154
+[1] Parallel distribution time: 0 mins 0 secs 726 ms; 726
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 2 secs 507 ms; 2507
+[4] Parallel distribution time: 0 mins 0 secs 377 ms; 377
+[4] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Total time: 0 mins 2 secs 230 ms; 2230
+[0] Gather time: 0 mins 0 secs 15 ms; 15
+[0] Total time: 0 mins 2 secs 521 ms; 2521
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 1 secs 571 ms; 1571
+[0] Set Size: 209270
+[0] Map Size: 2008765
+[0] File Partion Size: 2333540
+[1] Preprocessing time: 0 mins 1 secs 697 ms; 1697
+[1] Set Size: 201112
+[1] Map Size: 2070549
+[1] File Partion Size: 2333542
+[4] Preprocessing time: 0 mins 1 secs 942 ms; 1942
+[4] Set Size: 204176
+[4] Map Size: 2067842
+[4] File Partion Size: 2333556
+[2] Preprocessing time: 0 mins 1 secs 558 ms; 1558
+[2] Set Size: 217592
+[2] Map Size: 2028622
+[2] File Partion Size: 2333548
+[3] Preprocessing time: 0 mins 1 secs 967 ms; 1967
+[3] Set Size: 205392
+[3] Map Size: 2073273
+[3] File Partion Size: 2333534
+[5] Preprocessing time: 0 mins 1 secs 929 ms; 1929
+[5] Set Size: 212582
+[5] Map Size: 2046712
+[5] File Partion Size: 2333550
+[0] Parallel distribution time: 0 mins 0 secs 786 ms; 786
+[4] Parallel distribution time: 0 mins 0 secs 426 ms; 426
+[1] Parallel distribution time: 0 mins 0 secs 704 ms; 704
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 2 secs 401 ms; 2401
+[2] Parallel distribution time: 0 mins 0 secs 423 ms; 423
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 1 secs 982 ms; 1982
+[3] Parallel distribution time: 0 mins 0 secs 418 ms; 418
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 2 secs 386 ms; 2386
+[4] Gather time: 0 mins 0 secs 2 ms; 2
+[5] Parallel distribution time: 0 mins 0 secs 380 ms; 380
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 2 secs 310 ms; 2310
+[4] Total time: 0 mins 2 secs 370 ms; 2370
+[0] Gather time: 0 mins 0 secs 15 ms; 15
+[0] Total time: 0 mins 2 secs 373 ms; 2373
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 1 secs 519 ms; 1519
+[0] Set Size: 180312
+[0] Map Size: 1715899
+[0] File Partion Size: 2000160
+[1] Preprocessing time: 0 mins 1 secs 576 ms; 1576
+[1] Set Size: 168204
+[1] Map Size: 1779345
+[1] File Partion Size: 2000190
+[3] Preprocessing time: 0 mins 1 secs 377 ms; 1377
+[3] Set Size: 185694
+[3] Map Size: 1738243
+[3] File Partion Size: 2000172
+[4] Preprocessing time: 0 mins 1 secs 466 ms; 1466
+[4] Set Size: 171914
+[4] Map Size: 1797971
+[4] File Partion Size: 2000202
+[6] Preprocessing time: 0 mins 1 secs 881 ms; 1881
+[6] Set Size: 179648
+[6] Map Size: 1765263
+[6] File Partion Size: 2000194
+[5] Preprocessing time: 0 mins 1 secs 891 ms; 1891
+[5] Set Size: 181492
+[2] Preprocessing time: 0 mins 1 secs 647 ms; 1647
+[5] Map Size: 1751909
+[2] Set Size: 182912
+[2] Map Size: 1748715
+[2] File Partion Size: 2000176
+[5] File Partion Size: 2000176
+[0] Parallel distribution time: 0 mins 0 secs 740 ms; 740
+[4] Parallel distribution time: 0 mins 0 secs 394 ms; 394
+[1] Parallel distribution time: 0 mins 0 secs 732 ms; 732
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 2 secs 308 ms; 2308
+[2] Parallel distribution time: 0 mins 0 secs 387 ms; 387
+[5] Parallel distribution time: 0 mins 0 secs 387 ms; 387
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 2 secs 279 ms; 2279
+[2] Total time: 0 mins 2 secs 35 ms; 2035
+[3] Parallel distribution time: 0 mins 0 secs 727 ms; 727
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 2 secs 105 ms; 2105
+[6] Parallel distribution time: 0 mins 0 secs 394 ms; 394
+[6] Gather time: 0 mins 0 secs 0 ms; 0
+[6] Total time: 0 mins 2 secs 276 ms; 2276
+[4] Gather time: 0 mins 0 secs 1 ms; 1
+[4] Total time: 0 mins 1 secs 862 ms; 1862
+[0] Gather time: 0 mins 0 secs 14 ms; 14
+[0] Total time: 0 mins 2 secs 275 ms; 2275
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 1 secs 228 ms; 1228
+[0] Set Size: 159299
+[0] Map Size: 1495924
+[0] File Partion Size: 1750148
+[3] Preprocessing time: 0 mins 1 secs 64 ms; 1064
+[3] Set Size: 161206
+[3] Map Size: 1531573
+[3] File Partion Size: 1750174
+[1] Preprocessing time: 0 mins 1 secs 275 ms; 1275
+[1] Set Size: 149464
+[1] Map Size: 1549656
+[1] File Partion Size: 1750168
+[6] Preprocessing time: 0 mins 1 secs 474 ms; 1474
+[6] Set Size: 163798
+[6] Map Size: 1515663
+[6] File Partion Size: 1750172
+[7] Preprocessing time: 0 mins 1 secs 475 ms; 1475
+[7] Set Size: 157896
+[7] Map Size: 1542503
+[7] File Partion Size: 1750168
+[5] Preprocessing time: 0 mins 1 secs 583 ms; 1583
+[5] Set Size: 147700
+[5] Map Size: 1575581
+[5] File Partion Size: 1750154
+[4] Preprocessing time: 0 mins 1 secs 304 ms; 1304
+[4] Set Size: 152756
+[4] Map Size: 1554834
+[4] File Partion Size: 1750146
+[2] Preprocessing time: 0 mins 1 secs 340 ms; 1340
+[2] Set Size: 158106
+[2] Map Size: 1534619
+[2] File Partion Size: 1750140
+[0] Parallel distribution time: 0 mins 0 secs 773 ms; 773
+[4] Parallel distribution time: 0 mins 0 secs 427 ms; 427
+[1] Parallel distribution time: 0 mins 0 secs 751 ms; 751
+[6] Parallel distribution time: 0 mins 0 secs 524 ms; 524
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Parallel distribution time: 0 mins 0 secs 422 ms; 422
+[1] Total time: 0 mins 2 secs 27 ms; 2027
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 1 secs 763 ms; 1763
+[3] Parallel distribution time: 0 mins 0 secs 754 ms; 754
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 1 secs 818 ms; 1818
+[5] Parallel distribution time: 0 mins 0 secs 429 ms; 429
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 2 secs 13 ms; 2013
+[7] Parallel distribution time: 0 mins 0 secs 448 ms; 448
+[6] Gather time: 0 mins 0 secs 1 ms; 1
+[7] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Gather time: 0 mins 0 secs 1 ms; 1
+[7] Total time: 0 mins 1 secs 924 ms; 1924
+[4] Total time: 0 mins 1 secs 733 ms; 1733
+[6] Total time: 0 mins 2 secs 0 ms; 2000
+[0] Gather time: 0 mins 0 secs 15 ms; 15
+[0] Total time: 0 mins 2 secs 17 ms; 2017
+e04d911b1b2de9d4411e8bb2394ee616  ./results/word_list_misspelled.txt
+---------------------------
+---------------------------
