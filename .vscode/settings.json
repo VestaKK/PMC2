@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "unordered_set": "cpp",
+        "iostream": "cpp",
+        "cstdint": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp"
+    }
+}
