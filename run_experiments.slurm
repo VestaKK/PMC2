@@ -16,15 +16,32 @@ if [ -z "$1" ] || [ -z "$2" ]; then
 else
     dict=$1
     file=$2
-    MAX_NODES=$3
     echo "[*] Using provided files: $dict $file "
     echo "[*] Using provided nodes: $MAX_NODES"
 fi
 echo "---------------------------"
-
-content=''
-for i in $(seq 1 $MAX_NODES)
-do
-    srun -np $i ./build/spellcheck $dict $file
-done
-
+echo "---------------------------"
+srun --ntasks=1 --nodes=1 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=2 --nodes=2 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=3 --nodes=3 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=4 --nodes=4 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=5 --nodes=5 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=6 --nodes=6 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=7 --nodes=7 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"
+srun --ntasks=8 --nodes=8 ./build/spellcheck $dict $file
+echo "---------------------------"
+echo "---------------------------"

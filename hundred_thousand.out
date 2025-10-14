@@ -1,0 +1,273 @@
+==========================
+[*] Using provided files: ./files/dict100000.txt ./files/words100000.txt 
+[*] Using provided nodes: 
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 785 ms; 785
+[0] Set Size: 197785
+[0] Map Size: 1335504
+[0] File Partion Size: 1721142
+[0] Parallel distribution time: 0 mins 0 secs 105 ms; 105
+[0] Gather time: 0 mins 0 secs 9 ms; 9
+[0] Total time: 0 mins 0 secs 901 ms; 901
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 785 ms; 785
+[0] Set Size: 98215
+[0] Map Size: 669618
+[0] File Partion Size: 860556
+[1] Preprocessing time: 0 mins 0 secs 572 ms; 572
+[1] Set Size: 100058
+[1] Map Size: 680689
+[1] File Partion Size: 860586
+[0] Parallel distribution time: 0 mins 0 secs 226 ms; 226
+[1] Parallel distribution time: 0 mins 0 secs 96 ms; 96
+[1] Gather time: 0 mins 0 secs 1 ms; 1
+[1] Total time: 0 mins 0 secs 669 ms; 669
+[0] Gather time: 0 mins 0 secs 11 ms; 11
+[0] Total time: 0 mins 1 secs 23 ms; 1023
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 462 ms; 462
+[0] Set Size: 64279
+[0] Map Size: 448541
+[0] File Partion Size: 573714
+[2] Preprocessing time: 0 mins 0 secs 793 ms; 793
+[2] Set Size: 66200
+[2] Map Size: 457407
+[2] File Partion Size: 573722
+[1] Preprocessing time: 0 mins 0 secs 459 ms; 459
+[1] Set Size: 67954
+[1] Map Size: 452014
+[1] File Partion Size: 573706
+[0] Parallel distribution time: 0 mins 0 secs 160 ms; 160
+[1] Parallel distribution time: 0 mins 0 secs 81 ms; 81
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 0 secs 541 ms; 541
+[2] Parallel distribution time: 0 mins 0 secs 148 ms; 148
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 0 secs 941 ms; 941
+[0] Gather time: 0 mins 0 secs 8 ms; 8
+[0] Total time: 0 mins 0 secs 631 ms; 631
+---------------------------
+---------------------------
+[1] Preprocessing time: 0 mins 0 secs 566 ms; 566
+[1] Set Size: 50466
+[1] Map Size: 343312
+[1] File Partion Size: 430286
+[0] Preprocessing time: 0 mins 0 secs 548 ms; 548
+[0] Set Size: 47977
+[0] Map Size: 333333
+[0] File Partion Size: 430270
+[2] Preprocessing time: 0 mins 0 secs 554 ms; 554
+[2] Set Size: 49548
+[2] Map Size: 344974
+[2] File Partion Size: 430284
+[3] Preprocessing time: 0 mins 0 secs 460 ms; 460
+[3] Set Size: 50510
+[3] Map Size: 340307
+[3] File Partion Size: 430302
+[0] Parallel distribution time: 0 mins 0 secs 146 ms; 146
+[1] Parallel distribution time: 0 mins 0 secs 146 ms; 146
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 0 secs 713 ms; 713
+[2] Parallel distribution time: 0 mins 0 secs 115 ms; 115
+[3] Parallel distribution time: 0 mins 0 secs 100 ms; 100
+[2] Gather time: 0 mins 0 secs 1 ms; 1
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 0 secs 671 ms; 671
+[3] Total time: 0 mins 0 secs 560 ms; 560
+[0] Gather time: 0 mins 0 secs 10 ms; 10
+[0] Total time: 0 mins 0 secs 705 ms; 705
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 823 ms; 823
+[0] Set Size: 38358
+[0] Map Size: 265226
+[0] File Partion Size: 344222
+[1] Preprocessing time: 0 mins 0 secs 829 ms; 829
+[1] Set Size: 39892
+[1] Map Size: 276129
+[1] File Partion Size: 344220
+[3] Preprocessing time: 0 mins 0 secs 540 ms; 540
+[3] Set Size: 39268
+[3] Map Size: 278596
+[3] File Partion Size: 344232
+[4] Preprocessing time: 0 mins 0 secs 380 ms; 380
+[4] Set Size: 40174
+[4] Map Size: 274854
+[4] File Partion Size: 344236
+[2] Preprocessing time: 0 mins 0 secs 603 ms; 603
+[2] Set Size: 40846
+[2] Map Size: 271364
+[2] File Partion Size: 344232
+[0] Parallel distribution time: 0 mins 0 secs 135 ms; 135
+[3] Parallel distribution time: 0 mins 0 secs 130 ms; 130
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 0 secs 670 ms; 670
+[1] Parallel distribution time: 0 mins 0 secs 132 ms; 132
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 0 secs 962 ms; 962
+[2] Parallel distribution time: 0 mins 0 secs 105 ms; 105
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 0 secs 708 ms; 708
+[4] Parallel distribution time: 0 mins 0 secs 106 ms; 106
+[4] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Total time: 0 mins 0 secs 486 ms; 486
+[0] Gather time: 0 mins 0 secs 10 ms; 10
+[0] Total time: 0 mins 0 secs 969 ms; 969
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 572 ms; 572
+[0] Set Size: 32563
+[0] Map Size: 217558
+[0] File Partion Size: 286846
+[3] Preprocessing time: 0 mins 0 secs 632 ms; 632
+[3] Set Size: 33858
+[3] Map Size: 227682
+[3] File Partion Size: 286864
+[1] Preprocessing time: 0 mins 0 secs 616 ms; 616
+[1] Set Size: 31834
+[1] Map Size: 235269
+[1] File Partion Size: 286848
+[2] Preprocessing time: 0 mins 0 secs 358 ms; 358
+[2] Set Size: 34098
+[2] Map Size: 227267
+[2] File Partion Size: 286862
+[4] Preprocessing time: 0 mins 0 secs 626 ms; 626
+[4] Set Size: 32964
+[4] Map Size: 229921
+[4] File Partion Size: 286850
+[5] Preprocessing time: 0 mins 0 secs 602 ms; 602
+[5] Set Size: 33236
+[5] Map Size: 231526
+[5] File Partion Size: 286872
+[0] Parallel distribution time: 0 mins 0 secs 155 ms; 155
+[4] Parallel distribution time: 0 mins 0 secs 135 ms; 135
+[3] Parallel distribution time: 0 mins 0 secs 151 ms; 151
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 0 secs 783 ms; 783
+[1] Parallel distribution time: 0 mins 0 secs 150 ms; 150
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 0 secs 766 ms; 766
+[2] Parallel distribution time: 0 mins 0 secs 135 ms; 135
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 0 secs 494 ms; 494
+[5] Parallel distribution time: 0 mins 0 secs 115 ms; 115
+[4] Gather time: 0 mins 0 secs 1 ms; 1
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 0 secs 717 ms; 717
+[4] Total time: 0 mins 0 secs 762 ms; 762
+[0] Gather time: 0 mins 0 secs 10 ms; 10
+[0] Total time: 0 mins 0 secs 738 ms; 738
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 651 ms; 651
+[0] Set Size: 27956
+[0] Map Size: 185262
+[0] File Partion Size: 245862
+[5] Preprocessing time: 0 mins 0 secs 697 ms; 697
+[5] Set Size: 28706
+[5] Map Size: 193582
+[5] File Partion Size: 245858
+[1] Preprocessing time: 0 mins 0 secs 691 ms; 691
+[1] Set Size: 27172
+[1] Map Size: 200010
+[1] File Partion Size: 245882
+[3] Preprocessing time: 0 mins 0 secs 394 ms; 394
+[3] Set Size: 29120
+[3] Map Size: 194941
+[3] File Partion Size: 245874
+[2] Preprocessing time: 0 mins 0 secs 445 ms; 445
+[2] Set Size: 29116
+[2] Map Size: 195148
+[2] File Partion Size: 245868
+[4] Preprocessing time: 0 mins 0 secs 362 ms; 362
+[4] Set Size: 27942
+[4] Map Size: 200389
+[4] File Partion Size: 245894
+[6] Preprocessing time: 0 mins 0 secs 707 ms; 707
+[6] Set Size: 28564
+[6] Map Size: 199683
+[6] File Partion Size: 245904
+[0] Parallel distribution time: 0 mins 0 secs 139 ms; 139
+[5] Parallel distribution time: 0 mins 0 secs 137 ms; 137
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 0 secs 834 ms; 834
+[3] Parallel distribution time: 0 mins 0 secs 135 ms; 135
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[3] Total time: 0 mins 0 secs 530 ms; 530
+[2] Parallel distribution time: 0 mins 0 secs 117 ms; 117
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Parallel distribution time: 0 mins 0 secs 116 ms; 116
+[1] Parallel distribution time: 0 mins 0 secs 136 ms; 136
+[2] Total time: 0 mins 0 secs 562 ms; 562
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Total time: 0 mins 0 secs 828 ms; 828
+[6] Parallel distribution time: 0 mins 0 secs 113 ms; 113
+[6] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Gather time: 0 mins 0 secs 0 ms; 0
+[6] Total time: 0 mins 0 secs 821 ms; 821
+[4] Total time: 0 mins 0 secs 479 ms; 479
+[0] Gather time: 0 mins 0 secs 9 ms; 9
+[0] Total time: 0 mins 0 secs 800 ms; 800
+---------------------------
+---------------------------
+[0] Preprocessing time: 0 mins 0 secs 657 ms; 657
+[0] Set Size: 24276
+[0] Map Size: 162105
+[0] File Partion Size: 215134
+[3] Preprocessing time: 0 mins 0 secs 395 ms; 395
+[3] Set Size: 25472
+[3] Map Size: 171294
+[3] File Partion Size: 215144
+[1] Preprocessing time: 0 mins 0 secs 725 ms; 725
+[1] Set Size: 23796
+[1] Map Size: 174278
+[1] File Partion Size: 215136
+[5] Preprocessing time: 0 mins 0 secs 732 ms; 732
+[5] Set Size: 23872
+[5] Map Size: 177135
+[5] File Partion Size: 215136
+[6] Preprocessing time: 0 mins 0 secs 715 ms; 715
+[6] Set Size: 25162
+[6] Map Size: 168781
+[6] File Partion Size: 215144
+[4] Preprocessing time: 0 mins 0 secs 364 ms; 364
+[4] Set Size: 25676
+[4] Map Size: 169470
+[4] File Partion Size: 215148
+[2] Preprocessing time: 0 mins 0 secs 388 ms; 388
+[2] Set Size: 24994
+[2] Map Size: 174551
+[2] File Partion Size: 215142
+[7] Preprocessing time: 0 mins 0 secs 654 ms; 654
+[7] Set Size: 25348
+[7] Map Size: 173740
+[7] File Partion Size: 215158
+[0] Parallel distribution time: 0 mins 0 secs 185 ms; 185
+[2] Parallel distribution time: 0 mins 0 secs 165 ms; 165
+[6] Parallel distribution time: 0 mins 0 secs 177 ms; 177
+[5] Parallel distribution time: 0 mins 0 secs 178 ms; 178
+[1] Parallel distribution time: 0 mins 0 secs 178 ms; 178
+[5] Gather time: 0 mins 0 secs 0 ms; 0
+[1] Gather time: 0 mins 0 secs 0 ms; 0
+[5] Total time: 0 mins 0 secs 910 ms; 910
+[1] Total time: 0 mins 0 secs 904 ms; 904
+[3] Parallel distribution time: 0 mins 0 secs 183 ms; 183
+[3] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Parallel distribution time: 0 mins 0 secs 175 ms; 175
+[3] Total time: 0 mins 0 secs 579 ms; 579
+[2] Gather time: 0 mins 0 secs 0 ms; 0
+[2] Total time: 0 mins 0 secs 554 ms; 554
+[7] Parallel distribution time: 0 mins 0 secs 156 ms; 156
+[7] Gather time: 0 mins 0 secs 0 ms; 0
+[4] Gather time: 0 mins 0 secs 0 ms; 0
+[6] Gather time: 0 mins 0 secs 0 ms; 0
+[7] Total time: 0 mins 0 secs 810 ms; 810
+[6] Total time: 0 mins 0 secs 893 ms; 893
+[4] Total time: 0 mins 0 secs 540 ms; 540
+[0] Gather time: 0 mins 0 secs 10 ms; 10
+[0] Total time: 0 mins 0 secs 853 ms; 853
+---------------------------
+---------------------------
