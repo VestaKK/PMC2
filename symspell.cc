@@ -202,18 +202,18 @@ void Sym_Spell::remove_char_at(char* buf, const char* s, size_t s_len, size_t i)
 
 // copied from skeleton
 size_t Sym_Spell::edit_distance(const std::string& s1, const std::string& s2) {
-    const size_t m = s1.size();
-    const size_t n = s2.size();
-
+  const size_t m = s1.size();
+  const size_t n = s2.size();
 
     thread_local std::vector<std::vector<size_t>> dp;
+
     // Resize the dp table if necessary
     if (dp.size() < m + 1) {
         dp.resize(m + 1);
     }
     for (size_t i = 0; i <= m; ++i) {
         if (dp[i].size() < n + 1) {
-            dp[i].resize(n + 1);
+        dp[i].resize(n + 1);
         }
     }
 
@@ -224,38 +224,14 @@ size_t Sym_Spell::edit_distance(const std::string& s1, const std::string& s2) {
         dp[0][j] = j;
     }
 
-    if (s2[0] < 'a' && s2[0] > 'z') {
-        for (size_t i = 1; i <= m; ++i) {
-            for (size_t j = 1; j <= n; ++j) {
-            if (s1[i - 1] == s2[j - 1]) {
-                dp[i][j] = dp[i - 1][j - 1];
-            } else {
-                dp[i][j] = std::min(
-                    {dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + 1});
-            }
-            }
-        }
-        return dp[m][n];
-    }
-
     for (size_t i = 1; i <= m; ++i) {
-        if (s1[i - 1] == s2[0]) {
-            dp[i][1] = dp[i - 1][0];
-        } else if (s1[i - 1] >= 'A' && s1[i - 1] <= 'Z' &&
-                    s1[i - 1] + 'a' - 'A' == s2[0]) {
-            // e.ii
-            dp[i][1] = dp[i - 1][0];
+        for (size_t j = 1; j <= n; ++j) {
+        if (s1[i - 1] == s2[j - 1]) {
+            dp[i][j] = dp[i - 1][j - 1];
         } else {
-            dp[i][1] = std::min({dp[i - 1][1] + 1, dp[i][0] + 1, dp[i - 1][0] + 1});
+            dp[i][j] = std::min(
+                {dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + 1});
         }
-    }
-    for (size_t i = 1; i <= m; ++i) {
-        for (size_t j = 2; j <= n; ++j) {
-            if (s1[i - 1] == s2[j - 1]) {
-                dp[i][j] = dp[i - 1][j - 1];
-            } else {
-                dp[i][j] = std::min({dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + 1});
-            }
         }
     }
     return dp[m][n];

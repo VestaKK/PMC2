@@ -5,7 +5,7 @@ CCFLAGS = -std=c++17 -O3
 BUILD := build
 FILES := files
 BIN := spellcheck
-NUM_NODES := 3
+NUM_NODES := 8
 
 all: $(BUILD)/$(BIN)
 
