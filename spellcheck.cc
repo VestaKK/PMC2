@@ -20,7 +20,6 @@ void read_partition(
   }
   // printf("[MPI process %d] File opened successfully.\n", rank);
 
-
   MPI_Status status;
   MPI_Offset text_len;
 
@@ -82,7 +81,10 @@ Sym_Spell sym_spell_partition(const char* filename, int rank, int size) {
   char* data;
   char* begin;
   size_t list_len;
+  // Read the file
   read_partition(filename, rank, size, &data, &begin, &list_len);
+
+  // Put data into sym_spell data structure
   Sym_Spell smp = Sym_Spell(begin, list_len);
   free(data);
   return smp;
@@ -126,39 +128,33 @@ int main(int argc, char** argv) {
     return 1;
   }
 
+  auto start = high_resolution_clock::now(); // Start timing
 
-  auto start = high_resolution_clock::now();  // Start timing
-
+  // Initialise MPI
   MPI_Init(&argc, &argv);
-
   int rank;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-
   int size;
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
+  // Build out sym spell data structure
   Sym_Spell sym = sym_spell_partition(argv[1], rank, size);
   int count = sym.dict.size();
   int word_count;
+  std::string out = std::string();
+  out += std::to_string(rank);
+  out += ", ";
 
   auto setup_time = high_resolution_clock::now();
   {
     auto time = setup_time;
-    auto duration = duration_cast<milliseconds>(time - start).count();
-
-    // Convert duration to minutes, seconds, and milliseconds
-
-    auto minutes = duration / 60000;
-    auto seconds = (duration % 60000) / 1000;
+    auto duration = duration_cast<milliseconds>(setup_time - start).count();
     auto milliseconds = duration % 1000;
-    std::cout << '[' << rank << ']' << " Preprocessing time: " << minutes << " mins " << seconds << " secs "
-        << milliseconds << " ms"
-        << "; " << duration << std::endl;
+    out += std::to_string(duration); out += "ms"; out += ", ";
+    out += std::to_string(sym.dict.size()); out += ", ";
+    out += std::to_string(sym.map.size()); out += ", ";
+    out += std::to_string(sym.filesize); out += ", ";
   }
-
-  std::cout << '[' << rank << ']' << " Set Size: " << sym.dict.size() <<std::endl;
-  std::cout << '[' << rank << ']' << " Map Size: " << sym.map.size() <<std::endl;
-  std::cout << '[' << rank << ']' << " File Partion Size: " << 2*sym.filesize <<std::endl;
 
   if (rank == 0) {
     MPI_Reduce(&count, &word_count, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD);
@@ -227,18 +223,12 @@ int main(int argc, char** argv) {
       MPI_Bcast(&word_list.lengths.front(), word_list.lengths.size(), MPI_INT, i, MPI_COMM_WORLD);
       curr_words = word_list.data;
       curr_lengths = &word_list.lengths.front();
-      // int accum = 0;
-      // for (int j=0; j<10; j++) {
-      //   printf("%d %s\n", i, &curr_words[accum]);
-      //   accum += curr_lengths[j] + 1;
-      // }
     } else {
       MPI_Bcast(other_words, word_list_lengths[i], MPI_CHAR, i, MPI_COMM_WORLD);
       MPI_Bcast(other_lengths, word_list_counts[i], MPI_INT, i, MPI_COMM_WORLD);
       curr_words = other_words;
       curr_lengths = other_lengths;
     }
-
 
     int num_words = word_list_counts[i];
 
@@ -256,9 +246,7 @@ int main(int argc, char** argv) {
     for (int j=0; j<num_words; j++) {
 
       // Only if the word doesn't exist anywhere
-
       if (!global_word_check[j]) {
-        // Create buffer for candidate strings
 
         // {words, thing, hi}
         map[j] = sym.candidates(&curr_words[accum], curr_lengths[j]);
@@ -300,7 +288,6 @@ int main(int argc, char** argv) {
       total_write += accum;
     }
 
-
     // printf("%d\n", total_write);
 
     // reallocate buffers as necessary
@@ -341,8 +328,6 @@ int main(int argc, char** argv) {
 
     // This is the number of misspelt words in our local candidates list 
     misspelt_words = misspelt_word_count;
-    // printf("%d(miss): %d\n", rank, misspelt_word_count);
-
     candidate_counts = (int*)calloc(misspelt_words, sizeof(int));
 
     int offset=0;
@@ -419,17 +404,9 @@ int main(int argc, char** argv) {
 
   auto parallel_processing_time = high_resolution_clock::now();
   {
-    auto time = parallel_processing_time;
-    auto duration = duration_cast<milliseconds>(time - setup_time).count();
-
-    // Convert duration to minutes, seconds, and milliseconds
-
-    auto minutes = duration / 60000;
-    auto seconds = (duration % 60000) / 1000;
+    auto duration = duration_cast<milliseconds>(parallel_processing_time - setup_time).count();
     auto milliseconds = duration % 1000;
-    std::cout << '[' << rank << ']' << " Parallel distribution time: " << minutes << " mins " << seconds << " secs "
-        << milliseconds << " ms"
-        << "; " << duration << std::endl;
+    out += std::to_string(duration); out += "ms" ; out += ", ";
   }
 
   const char* out_filename = "results/word_list_misspelled.txt";
@@ -499,7 +476,7 @@ int main(int argc, char** argv) {
     
     std::ofstream out("results/word_list_misspelled.txt");
     for (Line line : output_lines) {
-		if (line.line == "\n") continue; // dumb bug ig
+		  if (line.line == "\n") continue; // dumb bug ig
       out << line.line;
     }
     out.close();
@@ -512,33 +489,19 @@ int main(int argc, char** argv) {
   // Gather time
   auto gather_time = high_resolution_clock::now();
   {
-    auto time = high_resolution_clock::now();
     auto duration = duration_cast<milliseconds>(gather_time - parallel_processing_time).count();
-
-    // Convert duration to minutes, seconds, and milliseconds
-
-    auto minutes = duration / 60000;
-    auto seconds = (duration % 60000) / 1000;
     auto milliseconds = duration % 1000;
-    std::cout << '[' << rank << ']' << " Gather time: " << minutes << " mins " << seconds << " secs "
-        << milliseconds << " ms"
-        << "; " << duration << std::endl;
+    out += std::to_string(duration); out += "ms" ; out += ", ";
   }
 
   // Show wall time
+  auto time = high_resolution_clock::now();
   {
-    auto time = high_resolution_clock::now();
     auto duration = duration_cast<milliseconds>(time - start).count();
-
-    // Convert duration to minutes, seconds, and milliseconds
-
-    auto minutes = duration / 60000;
-    auto seconds = (duration % 60000) / 1000;
     auto milliseconds = duration % 1000;
-    std::cout << '[' << rank << ']' << " Total time: " << minutes << " mins " << seconds << " secs "
-        << milliseconds << " ms"
-        << "; " << duration << std::endl;
+    out += std::to_string(duration); out += "ms"; out += "\n";
   }
+  std::cout << out;
 
   free(file_lines);
   free(count_words);

@@ -41,12 +41,9 @@ struct Sym_Spell {
   bool check(const char* s, size_t s_len);
   std::vector<const char*> candidates(const char* s, size_t s_len);
   std::vector<const char*> candidates(const std::string &s);
-  std::vector<const char*> candidates(const char* s, size_t s_len, size_t *out_hash);
 
   private:
-    void remove_char_at(char* buf, const char* s, size_t s_len, size_t i);
     size_t edit_distance(const std::string& s1, const std::string& s2);
-    void insert_capital(const char*s, size_t s_len);
 };
 
 struct Word_List {
