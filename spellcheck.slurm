@@ -1,12 +1,12 @@
 #!/usr/bin/bash
 
 #SBATCH --job-name=MTP_UWE
-#SBATCH --time 00:03:00
+#SBATCH --time 00:05:00
 #SBATCH --partition=sapphire
 
-#SBATCH --nodes=32
-#SBATCH --ntasks=32
-#SBATCH --tasks-per-node=1
+#SBATCH --nodes=8
+#SBATCH --ntasks=64
+#SBATCH --ntasks-per-node=8
 #SBATCH --cpus-per-task=1
 
 module load OpenMPI/4.1.4

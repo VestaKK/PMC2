@@ -1,0 +1,7 @@
+1 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 8192 KB
+2 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 8192 KB
+4 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 8192 KB
+8 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 9216 KB
+16 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 8192 KB
+32 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 7168 KB
+64 95bf2f9d51a5670e0067eaba2d0930db  results/word_list_misspelled.txt 8192 KB

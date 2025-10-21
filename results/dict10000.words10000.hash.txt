@@ -1,0 +1,7 @@
+1 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 8192 KB
+2 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 8192 KB
+4 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 8192 KB
+8 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 9216 KB
+16 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 9216 KB
+32 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 9216 KB
+64 074bf2e9ab0382f37fb732cbc2b53cb1  results/word_list_misspelled.txt 8192 KB

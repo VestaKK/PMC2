@@ -1,0 +1,7 @@
+1 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 8192 KB
+2 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 8192 KB
+4 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 8192 KB
+8 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 8192 KB
+16 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 9216 KB
+32 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 8192 KB
+64 c6939e15ceaa4338f8f37a394ec66414  results/word_list_misspelled.txt 9216 KB

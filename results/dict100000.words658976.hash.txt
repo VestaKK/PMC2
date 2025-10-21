@@ -1,0 +1,7 @@
+1 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 8192 KB
+2 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 9216 KB
+4 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 8192 KB
+8 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 8192 KB
+16 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 7168 KB
+32 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 8192 KB
+64 af81908a77a25f4990da74c81e4c6fe0  results/word_list_misspelled.txt 8192 KB

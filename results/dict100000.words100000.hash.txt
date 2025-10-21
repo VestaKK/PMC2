@@ -1,0 +1,7 @@
+1 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 8192 KB
+2 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 8192 KB
+4 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 8192 KB
+8 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 9216 KB
+16 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 8192 KB
+32 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 9216 KB
+64 0134d51e743d94a453b368be0014508d  results/word_list_misspelled.txt 7168 KB
