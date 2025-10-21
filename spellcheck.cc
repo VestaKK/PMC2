@@ -153,7 +153,8 @@ int main(int argc, char** argv) {
     out += std::to_string(duration); out += "ms"; out += ", ";
     out += std::to_string(sym.dict.size()); out += ", ";
     out += std::to_string(sym.map.size()); out += ", ";
-    out += std::to_string(sym.filesize); out += ", ";
+    out += std::to_string(sym.map.size() / (double) sym.dict.size()); out += ", ";
+    out += std::to_string(sym.filesize); out += "B" ; out += ", ";
   }
 
   if (rank == 0) {

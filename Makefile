@@ -15,8 +15,8 @@ $(BUILD)/$(BIN): spellcheck.cc symspell.cc
 clean: 
 	rm -rf $(BUILD)/*
 
-sha: $(BUILD)/$(BIN)
-	time -v mpirun -np $(NUM_NODES) $(BUILD)/$(BIN) $(FILES)/dict626623.txt $(FILES)/words658976.txt | sort -n > misc/out.txt
+md5sum: $(BUILD)/$(BIN)
+	time -v mpirun -np $(NUM_NODES) $(BUILD)/$(BIN) $(FILES)/dict100000.txt $(FILES)/words100000.txt | sort -n > misc/out.txt
 	cat misc/headings.txt misc/out.txt > results/thing.csv
 	rm misc/out.txt
 	md5sum results/word_list_misspelled.txt

@@ -37,7 +37,6 @@ for i in $(seq 1 $MAX_THREADS)
 do
     out_arg="$file_basename.parallel.$i"
     out_file="$res_path/$out_arg.time"
-
     stdout=$(OMP_NUM_THREADS=$i /usr/bin/time -v ./build/run $file $out_arg 2>&1)
     peak_mem=$( echo "$stdout" | grep "Maximum resident set size" | awk '{print $NF}' )
     echo -e "$stdout"
